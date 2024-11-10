@@ -1,0 +1,47 @@
+
+  
+  .navbar {
+    background-color: #f8f9fa; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+ 
+.logo1 {
+    width: 40vw; 
+    max-width: 20%; 
+    height: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background image styling */
+.bg {
+    width: 100%; /* Full width of container */
+    height: auto; /* Responsive height based on aspect ratio */
+    opacity: 0.75; /* Opacity adjusted as a decimal for consistency */
+    min-height: 200px; /* Minimum height for smaller screens */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .bg {
+        height: 600px; /* Custom height for larger screens */
+    }
+
+    .logo1 {
+        width: 30vw; /* Slightly larger on larger screens */
+        max-width: 15%;
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+    .logo1 {
+        width: 60vw; /* Larger width for smaller screens */
+    }
+
+    .bg {
+        height: 100px; /* Reduced height for smaller screens */
+    }
+}
